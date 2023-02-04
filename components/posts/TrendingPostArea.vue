@@ -10,10 +10,23 @@
         <a href="#" class="post-cata cata-sm cata-success">{{ badge }}</a>
         <a href="single-post.html" class="post-title">{{ title }}</a>
         <div class="post-meta d-flex">
-          <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 22</a>
-          <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 16</a>
           <a href="#"
-            ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 15</a
+            ><font-awesome-icon
+              :icon="['fas', 'comments']"
+              aria-hidden="true"
+            />
+            22</a
+          >
+          <a href="#"
+            ><font-awesome-icon :icon="['fas', 'eye']" aria-hidden="true" />
+            16</a
+          >
+          <a href="#"
+            ><font-awesome-icon
+              :icon="['fas', 'thumbs-up']"
+              aria-hidden="true"
+            />
+            15</a
           >
         </div>
       </div>

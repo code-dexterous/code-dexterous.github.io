@@ -10,9 +10,9 @@
         class="single-feature-post video-post bg-img"
         :style="{ backgroundImage: `url(${require('~/assets/imgs/7.jpg')})` }"
       >
-        <a href="video-post.html" class="btn play-btn"
-          ><i class="fa fa-play" aria-hidden="true"></i
-        ></a>
+        <a href="video-post.html" class="btn play-btn">
+          <font-awesome-icon :icon="['fas', 'play']" aria-hidden="true" />
+        </a>
 
         <div class="post-content">
           <a href="#" class="post-cata">Sports</a>
@@ -21,13 +21,23 @@
             Thursday</a
           >
           <div class="post-meta d-flex">
-            <a href="#"
-              ><i class="fa fa-comments-o" aria-hidden="true"></i> 25</a
-            >
-            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 25</a>
-            <a href="#"
-              ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 25</a
-            >
+            <a href="#">
+              <font-awesome-icon
+                :icon="['fas', 'comments']"
+                aria-hidden="true"
+              />
+              25
+            </a>
+            <a href="#">
+              <font-awesome-icon :icon="['fas', 'eye']" aria-hidden="true" /> 25
+            </a>
+            <a href="#">
+              <font-awesome-icon
+                :icon="['fas', 'thumbs-up']"
+                aria-hidden="true"
+              />
+              25
+            </a>
           </div>
         </div>
 

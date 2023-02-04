@@ -22,7 +22,10 @@
                   placeholder="Your email"
                 />
                 <button type="submit">
-                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                  <font-awesome-icon
+                    :icon="['fas', 'paper-plane']"
+                    aria-hidden="true"
+                  />
                 </button>
               </form>
             </div>
@@ -37,17 +40,17 @@
               <div class="single--twitter-slide">
                 <div class="single-twit">
                   <p>
-                    <i class="fa fa-twitter"></i> <span>@Leonard</span> I am so
-                    happy because I found this magazine, and it just made
-                    Vizeweasier. Thanks for sharing
+                    <font-awesome-icon :icon="['fab', 'twitter']" />
+                    <span>@Leonard</span> I am so happy because I found this
+                    magazine, and it just made Vizeweasier. Thanks for sharing
                   </p>
                 </div>
 
                 <div class="single-twit">
                   <p>
-                    <i class="fa fa-twitter"></i> <span>@Leonard</span> I am so
-                    happy because I found this magazine, and it just made
-                    Vizeweasier. Thanks for sharing
+                    <font-awesome-icon :icon="['fab', 'twitter']" />
+                    <span>@Leonard</span> I am so happy because I found this
+                    magazine, and it just made Vizeweasier. Thanks for sharing
                   </p>
                 </div>
               </div>
@@ -55,17 +58,17 @@
               <div class="single--twitter-slide">
                 <div class="single-twit">
                   <p>
-                    <i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so
-                    happy because I found this magazine, and it just made
-                    Vizeweasier. Thanks for sharing
+                    <font-awesome-icon :icon="['fab', 'twitter']" />
+                    <span>@Colorlib</span> I am so happy because I found this
+                    magazine, and it just made Vizeweasier. Thanks for sharing
                   </p>
                 </div>
 
                 <div class="single-twit">
                   <p>
-                    <i class="fa fa-twitter"></i> <span>@Colorlib</span> I am so
-                    happy because I found this magazine, and it just made
-                    Vizeweasier. Thanks for sharing
+                    <font-awesome-icon :icon="['fab', 'twitter']" />
+                    <span>@Colorlib</span> I am so happy because I found this
+                    magazine, and it just made Vizeweasier. Thanks for sharing
                   </p>
                 </div>
               </div>
@@ -86,14 +89,26 @@
                   >DC Shoes: gymkhana the</a
                 >
                 <div class="post-meta d-flex justify-content-between">
-                  <a href="#"
-                    ><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a
+                  <a href="#">
+                    <font-awesome-icon
+                      :icon="['fab', 'comments']"
+                      aria-hidden="true"
+                    />
+                    14</a
                   >
                   <a href="#"
-                    ><i class="fa fa-eye" aria-hidden="true"></i> 34</a
+                    ><font-awesome-icon
+                      :icon="['fab', 'eye']"
+                      aria-hidden="true"
+                    />
+                    34</a
                   >
                   <a href="#"
-                    ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a
+                    ><font-awesome-icon
+                      :icon="['fab', 'thumbs-up']"
+                      aria-hidden="true"
+                    />
+                    84</a
                   >
                 </div>
               </div>
@@ -109,13 +124,25 @@
                 >
                 <div class="post-meta d-flex justify-content-between">
                   <a href="#"
-                    ><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a
+                    ><font-awesome-icon
+                      :icon="['fas', 'comments']"
+                      aria-hidden="true"
+                    />
+                    14</a
                   >
                   <a href="#"
-                    ><i class="fa fa-eye" aria-hidden="true"></i> 34</a
+                    ><font-awesome-icon
+                      :icon="['fas', 'eye']"
+                      aria-hidden="true"
+                    />
+                    34</a
                   >
                   <a href="#"
-                    ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a
+                    ><font-awesome-icon
+                      :icon="['fas', 'thumbs-up']"
+                      aria-hidden="true"
+                    />
+                    84</a
                   >
                 </div>
               </div>
@@ -130,25 +157,25 @@
             <div class="contact-address">
               <p>101 E 129th St, East Chicago, <br />IN 46312, US</p>
               <p>Phone: 001-1234-88888</p>
-              <p>
-                Email:
-                <a
-                  href="/cdn-cgi/l/email-protection"
-                  class="__cf_email__"
-                  data-cfemail="137a7d757c3d707c7f7c617f7a7153747e727a7f3d707c7e"
-                  >[email&#160;protected]</a
-                >
-              </p>
+              <p>Email:</p>
             </div>
 
             <div class="footer-social-area">
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="google-plus"
-                ><i class="fa fa-google-plus"></i
-              ></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="facebook">
+                <font-awesome-icon :icon="['fab', 'facebook']" />
+              </a>
+              <a href="#" class="google-plus">
+                <font-awesome-icon :icon="['fab', 'google-plus']" />
+              </a>
+              <a href="#" class="instagram">
+                <font-awesome-icon :icon="['fab', 'instagram']" />
+              </a>
+              <a href="#" class="twitter">
+                <font-awesome-icon :icon="['fab', 'twitter']" />
+              </a>
+              <a href="#" class="linkedin">
+                <font-awesome-icon :icon="['fab', 'linkedin']" />
+              </a>
             </div>
           </div>
         </div>
@@ -161,7 +188,7 @@
           <div class="col-12 col-sm-6">
             <p class="copywrite-text">
               Copyright &copy; All rights reserved | This template is made with
-              <i class="fa fa-heart-o" aria-hidden="true"></i> by
+              <font-awesome-icon :icon="['fas', 'heart']" /> by
               <a href="https://colorlib.com" target="_blank">Colorlib</a>
             </p>
           </div>

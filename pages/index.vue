@@ -14,9 +14,6 @@
     </section>
     <trending-post />
     <featured-video />
-    <li v-for="side in $store.state.videos.playlists" :key="side.name">
-      {{ side.name }}
-    </li>
   </div>
 </template>
 

@@ -13,7 +13,7 @@
           <a href="single-post.html" class="post-title mb-2">{{ title }}</a>
           <div class="post-meta d-flex align-items-center mb-2">
             <a href="#" class="post-author">By {{ author }}</a>
-            <i class="fa fa-circle" aria-hidden="true"></i>
+            <font-awesome-icon :icon="['fas', 'circle']" aria-hidden="true" />
             <a href="#" class="post-date">{{ date }}</a>
           </div>
           <p class="mb-2">
@@ -21,11 +21,22 @@
           </p>
           <div class="post-meta d-flex">
             <a href="#"
-              ><i class="fa fa-comments-o" aria-hidden="true"></i> 32</a
+              ><font-awesome-icon
+                :icon="['fas', 'comments']"
+                aria-hidden="true"
+              />
+              32</a
             >
-            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 42</a>
             <a href="#"
-              ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7</a
+              ><font-awesome-icon :icon="['fas', 'eye']" aria-hidden="true" />
+              42</a
+            >
+            <a href="#"
+              ><font-awesome-icon
+                :icon="['fas', 'thumbs-up']"
+                aria-hidden="true"
+              />
+              7</a
             >
           </div>
         </div>

@@ -17,11 +17,24 @@
           >Full article Prince Charles's 'urgent' global research</a
         >
         <div class="post-meta d-flex">
-          <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-          <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 38</a>
           <a href="#"
-            ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 22</a
+            ><font-awesome-icon
+              :icon="['fas', 'comments']"
+              aria-hidden="true"
+            />
+            14</a
           >
+          <a href="#">
+            <font-awesome-icon :icon="['fas', 'eye']" aria-hidden="true" />
+            38
+          </a>
+          <a href="#">
+            <font-awesome-icon
+              :icon="['fas', 'eythumbs-upe']"
+              aria-hidden="true"
+            />
+            22
+          </a>
         </div>
       </div>
     </div>

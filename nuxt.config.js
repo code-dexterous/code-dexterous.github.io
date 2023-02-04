@@ -16,12 +16,16 @@ export default {
   css: ['~/assets/css/style.css'],
   plugins: [],
   components: true,
-  buildModules: ['@nuxtjs/eslint-module'],
+  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/fontawesome'],
   modules: ['@nuxtjs/axios'],
-
   axios: {
     baseURL: '/',
   },
-
   build: {},
+  fontawesome: {
+    icons: {
+      solid: true,
+      brands: true,
+    },
+  },
 }

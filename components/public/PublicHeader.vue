@@ -28,11 +28,21 @@
               class="top-meta-data d-flex align-items-center justify-content-end"
             >
               <div class="top-social-info">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-pinterest"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#">
+                  <font-awesome-icon :icon="['fab', 'facebook']" />
+                </a>
+                <a href="#">
+                  <font-awesome-icon :icon="['fab', 'pinterest']" />
+                </a>
+                <a href="#">
+                  <font-awesome-icon :icon="['fab', 'twitter']" />
+                </a>
+                <a href="#">
+                  <font-awesome-icon :icon="['fab', 'linkedin']" />
+                </a>
+                <a href="#">
+                  <font-awesome-icon :icon="['fab', 'youtube-play']" />
+                </a>
               </div>
 
               <div class="top-search-area">
@@ -44,14 +54,17 @@
                     placeholder="Search..."
                   />
                   <button type="submit" class="btn">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <font-awesome-icon
+                      :icon="['fas', 'search']"
+                      aria-hidden="true"
+                    />
                   </button>
                 </form>
               </div>
 
-              <a href="login.html" class="login-btn"
-                ><i class="fa fa-user" aria-hidden="true"></i
-              ></a>
+              <a href="login.html" class="login-btn">
+                <font-awesome-icon :icon="['fas', 'user']" aria-hidden="true" />
+              </a>
             </div>
           </div>
         </div>

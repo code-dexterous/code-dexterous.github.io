@@ -6,9 +6,17 @@
     <div class="post-content">
       <a href="single-post.html" class="post-title">{{ title }}</a>
       <div class="post-meta d-flex justify-content-between">
-        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 14</a>
-        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 34</a>
-        <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 84</a>
+        <a href="#">
+          <font-awesome-icon :icon="['fas', 'comments']" aria-hidden="true" />
+          14
+        </a>
+        <a href="#">
+          <font-awesome-icon :icon="['fas', 'eye']" aria-hidden="true" /> 34
+        </a>
+        <a href="#">
+          <font-awesome-icon :icon="['fas', 'thumbs-up']" aria-hidden="true" />
+          84
+        </a>
       </div>
     </div>
   </div>
