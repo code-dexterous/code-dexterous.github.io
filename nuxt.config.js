@@ -1,7 +1,7 @@
 export default {
   target: 'static',
   router: {
-    base: '/code-dexterous/',
+    base: '/',
   },
   head: {
     title: 'codedexterous',
