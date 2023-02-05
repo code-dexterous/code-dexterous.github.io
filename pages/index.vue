@@ -22,52 +22,22 @@ import FeaturedVideo from '~/components/videos/FeaturedVideo.vue'
 import TrendingPost from '~/components/videos/TrendingPost.vue'
 import VideoTabContent from '~/components/videos/VideoTabContent.vue'
 import VideoTabNav from '~/components/videos/VideoTabNav.vue'
+import { mernPlaylist } from '~/utils'
 export default {
   name: 'IndexPage',
   components: { VideoTabNav, VideoTabContent, TrendingPost, FeaturedVideo },
   fetch(ctx) {
-    ctx.store.dispatch('videos/changePlaylist', [
-      {
-        image: '21.jpg',
-        timeline: '05.03',
-        badge: 'Sports',
-        title: 'May fights on after Johnson savages Brexit approach',
-        author: 'Jane',
-        date: 'Sep 08, 2018',
-        description:
-          'Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.',
-      },
-      {
-        image: '22.jpg',
-        timeline: '05.03',
-        badge: 'Game',
-        title: "Thailand cave rescue: Boys 'doing well' after spending night",
-        author: 'Jane',
-        date: 'Sep 08, 2018',
-        description:
-          'Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.',
-      },
-      {
-        image: '23.jpg',
-        timeline: '05.03',
-        badge: 'Business',
-        title: 'Theresa May battles Brexiteer backlash amid disquiet',
-        author: 'Jane',
-        date: 'Sep 08, 2018',
-        description:
-          'Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.',
-      },
-      {
-        image: '24.jpg',
-        timeline: '05.03',
-        badge: 'Game',
-        title: 'Theresa May battles Brexiteer backlash amid disquiet',
-        author: 'Jane',
-        date: 'Sep 08, 2018',
-        description:
-          'Quisque mollis tristique ante. Proin ligula eros, varius id tristique sit amet, rutrum non ligula.',
-      },
-    ])
+    ctx.store.dispatch(
+      'videos/changeLatest',
+      mernPlaylist.filter((video) => video.latest)
+    )
+    ctx.store.dispatch(
+      'videos/changeTrending',
+      mernPlaylist.filter((video) => video.trending)
+    )
+    ctx.store.dispatch('videos/changePlaylist', mernPlaylist)
+    const randomNumber = Math.floor(Math.random() * 21)
+    ctx.store.dispatch('videos/changePlayerVideo', mernPlaylist[randomNumber])
   },
 }
 </script>

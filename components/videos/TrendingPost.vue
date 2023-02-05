@@ -11,22 +11,12 @@
       </div>
       <div class="row">
         <trending-post-area
-          image="11.jpg"
-          timeline="05.03"
-          badge="Sports"
-          title="Warner Bros. Developing ‘The accountant’ Sequel"
-        />
-        <trending-post-area
-          image="12.jpg"
-          timeline="05.03"
-          badge="Game"
-          title="Searching for the 'angel' who held me on Westminste Bridge"
-        />
-        <trending-post-area
-          image="13.jpg"
-          timeline="05.03"
-          badge="Business"
-          title="Love Island star's boyfriend found dead after her funeral"
+          v-for="video in $store.state.videos.trendings"
+          :key="video.id"
+          :image="video.image"
+          :timeline="video.timeline"
+          :badge="video.badge"
+          :title="video.title"
         />
       </div>
     </div>
