@@ -1,5 +1,8 @@
 export default {
   target: 'static',
+  router: {
+    base: '/',
+  },
   head: {
     title: 'codedexterous',
     htmlAttrs: {
