@@ -1,0 +1,179 @@
+<template>
+  <header class="header-area">
+    <div class="top-header-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="breaking-news-area d-flex align-items-center">
+              <div class="news-title">
+                <p>Breaking News:</p>
+              </div>
+              <div id="breakingNewsTicker" class="ticker">
+                <ul>
+                  <li>
+                    <a href="single-post.html">10 Things Amazon Echo Can Do</a>
+                  </li>
+                  <li>
+                    <a href="single-post.html">Welcome to Colorlib Family.</a>
+                  </li>
+                  <li>
+                    <a href="single-post.html">Boys 'doing well' after Thai</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div
+              class="top-meta-data d-flex align-items-center justify-content-end"
+            >
+              <div class="top-social-info">
+                <a href="#">
+                  <font-awesome-icon :icon="['fab', 'facebook']" />
+                </a>
+                <a href="#">
+                  <font-awesome-icon :icon="['fab', 'pinterest']" />
+                </a>
+                <a href="#">
+                  <font-awesome-icon :icon="['fab', 'twitter']" />
+                </a>
+                <a href="#">
+                  <font-awesome-icon :icon="['fab', 'linkedin']" />
+                </a>
+                <a href="#">
+                  <font-awesome-icon :icon="['fab', 'youtube-play']" />
+                </a>
+              </div>
+
+              <div class="top-search-area">
+                <form action="index.html" method="post">
+                  <input
+                    id="topSearch"
+                    type="search"
+                    name="top-search"
+                    placeholder="Search..."
+                  />
+                  <button type="submit" class="btn">
+                    <font-awesome-icon
+                      :icon="['fas', 'search']"
+                      aria-hidden="true"
+                    />
+                  </button>
+                </form>
+              </div>
+
+              <a href="login.html" class="login-btn">
+                <font-awesome-icon :icon="['fas', 'user']" aria-hidden="true" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sticker" class="vizew-main-menu">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <nav id="vizewNav" class="classy-navbar justify-content-between">
+            <a href="index.html" class="nav-brand"
+              ><img src="img/core-img/logo.png" alt=""
+            /></a>
+
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"
+                ><span></span><span></span><span></span
+              ></span>
+            </div>
+            <div class="classy-menu">
+              <div class="classycloseIcon">
+                <div class="cross-wrap">
+                  <span class="top"></span><span class="bottom"></span>
+                </div>
+              </div>
+
+              <div class="classynav">
+                <ul>
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="archive-list.html">Archives</a></li>
+                  <li>
+                    <a href="#">Pages</a>
+                    <ul class="dropdown">
+                      <li><a href="index.html">- Home</a></li>
+                      <li><a href="archive-list.html">- Archive List</a></li>
+                      <li><a href="archive-grid.html">- Archive Grid</a></li>
+                      <li><a href="single-post.html">- Single Post</a></li>
+                      <li><a href="video-post.html">- Single Video Post</a></li>
+                      <li><a href="contact.html">- Contact</a></li>
+                      <li><a href="typography.html">- Typography</a></li>
+                      <li><a href="login.html">- Login</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Features</a>
+                    <div class="megamenu">
+                      <ul class="single-mega cn-col-4">
+                        <li><a href="index.html">- Home</a></li>
+                        <li><a href="archive-list.html">- Archive List</a></li>
+                        <li><a href="archive-grid.html">- Archive Grid</a></li>
+                        <li><a href="single-post.html">- Single Post</a></li>
+                        <li>
+                          <a href="video-post.html">- Single Video Post</a>
+                        </li>
+                        <li><a href="contact.html">- Contact</a></li>
+                        <li><a href="typography.html">- Typography</a></li>
+                        <li><a href="login.html">- Login</a></li>
+                      </ul>
+                      <ul class="single-mega cn-col-4">
+                        <li><a href="index.html">- Home</a></li>
+                        <li><a href="archive-list.html">- Archive List</a></li>
+                        <li><a href="archive-grid.html">- Archive Grid</a></li>
+                        <li><a href="single-post.html">- Single Post</a></li>
+                        <li>
+                          <a href="video-post.html">- Single Video Post</a>
+                        </li>
+                        <li><a href="contact.html">- Contact</a></li>
+                        <li><a href="typography.html">- Typography</a></li>
+                        <li><a href="login.html">- Login</a></li>
+                      </ul>
+                      <ul class="single-mega cn-col-4">
+                        <li><a href="index.html">- Home</a></li>
+                        <li><a href="archive-list.html">- Archive List</a></li>
+                        <li><a href="archive-grid.html">- Archive Grid</a></li>
+                        <li><a href="single-post.html">- Single Post</a></li>
+                        <li>
+                          <a href="video-post.html">- Single Video Post</a>
+                        </li>
+                        <li><a href="contact.html">- Contact</a></li>
+                        <li><a href="typography.html">- Typography</a></li>
+                        <li><a href="login.html">- Login</a></li>
+                      </ul>
+                      <ul class="single-mega cn-col-4">
+                        <li><a href="index.html">- Home</a></li>
+                        <li><a href="archive-list.html">- Archive List</a></li>
+                        <li><a href="archive-grid.html">- Archive Grid</a></li>
+                        <li><a href="single-post.html">- Single Post</a></li>
+                        <li>
+                          <a href="video-post.html">- Single Video Post</a>
+                        </li>
+                        <li><a href="contact.html">- Contact</a></li>
+                        <li><a href="typography.html">- Typography</a></li>
+                        <li><a href="login.html">- Login</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+</template>
+
+<script>
+export default {
+  name: 'PublicHeader',
+}
+</script>
