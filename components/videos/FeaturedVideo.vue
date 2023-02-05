@@ -25,35 +25,7 @@
         <div class="col-12 col-md-5 col-lg-4">
           <div class="sidebar-area">
             <follower-widget />
-
             <latest-video />
-
-            <div class="single-widget newsletter-widget mb-50">
-              <div class="section-heading style-2 mb-30">
-                <h4>Newsletter</h4>
-                <div class="line"></div>
-              </div>
-              <p>
-                Subscribe our newsletter gor get notification about new updates,
-                information discount, etc.
-              </p>
-
-              <div class="newsletter-form">
-                <form action="#" method="post">
-                  <input
-                    id="emailnl"
-                    type="email"
-                    name="nl-email"
-                    class="form-control mb-15"
-                    placeholder="Enter your email"
-                  />
-                  <button type="submit" class="btn vizew-btn w-100">
-                    Subscribe
-                  </button>
-                </form>
-              </div>
-            </div>
-
             <most-viewed-playlist />
           </div>
         </div>

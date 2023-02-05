@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-6">
-            <div class="breaking-news-area d-flex align-items-center">
+            <!-- <div class="breaking-news-area d-flex align-items-center">
               <div class="news-title">
                 <p>Breaking News:</p>
               </div>
@@ -21,30 +21,13 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="col-12 col-md-6">
             <div
               class="top-meta-data d-flex align-items-center justify-content-end"
             >
-              <div class="top-social-info">
-                <a href="#">
-                  <font-awesome-icon :icon="['fab', 'facebook']" />
-                </a>
-                <a href="#">
-                  <font-awesome-icon :icon="['fab', 'pinterest']" />
-                </a>
-                <a href="#">
-                  <font-awesome-icon :icon="['fab', 'twitter']" />
-                </a>
-                <a href="#">
-                  <font-awesome-icon :icon="['fab', 'linkedin']" />
-                </a>
-                <a href="#">
-                  <font-awesome-icon :icon="['fab', 'youtube-play']" />
-                </a>
-              </div>
-
+              <social-media />
               <div class="top-search-area">
                 <form action="index.html" method="post">
                   <input
@@ -62,9 +45,9 @@
                 </form>
               </div>
 
-              <a href="login.html" class="login-btn">
+              <!-- <a href="login.html" class="login-btn">
                 <font-awesome-icon :icon="['fas', 'user']" aria-hidden="true" />
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -75,14 +58,16 @@
       <div class="classy-nav-container breakpoint-off">
         <div class="container">
           <nav id="vizewNav" class="classy-navbar justify-content-between">
-            <a href="index.html" class="nav-brand"
-              ><img src="img/core-img/logo.png" alt=""
-            /></a>
+            <nuxt-link to="/" class="nav-brand">
+              <img class="logo" src="/logo.svg" alt="" />
+            </nuxt-link>
 
             <div class="classy-navbar-toggler">
-              <span class="navbarToggler"
-                ><span></span><span></span><span></span
-              ></span>
+              <span class="navbarToggler">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
             </div>
             <div class="classy-menu">
               <div class="classycloseIcon">
@@ -93,75 +78,9 @@
 
               <div class="classynav">
                 <ul>
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="archive-list.html">Archives</a></li>
-                  <li>
-                    <a href="#">Pages</a>
-                    <ul class="dropdown">
-                      <li><a href="index.html">- Home</a></li>
-                      <li><a href="archive-list.html">- Archive List</a></li>
-                      <li><a href="archive-grid.html">- Archive Grid</a></li>
-                      <li><a href="single-post.html">- Single Post</a></li>
-                      <li><a href="video-post.html">- Single Video Post</a></li>
-                      <li><a href="contact.html">- Contact</a></li>
-                      <li><a href="typography.html">- Typography</a></li>
-                      <li><a href="login.html">- Login</a></li>
-                    </ul>
+                  <li class="active">
+                    <nuxt-link to="/">Home</nuxt-link>
                   </li>
-                  <li>
-                    <a href="#">Features</a>
-                    <div class="megamenu">
-                      <ul class="single-mega cn-col-4">
-                        <li><a href="index.html">- Home</a></li>
-                        <li><a href="archive-list.html">- Archive List</a></li>
-                        <li><a href="archive-grid.html">- Archive Grid</a></li>
-                        <li><a href="single-post.html">- Single Post</a></li>
-                        <li>
-                          <a href="video-post.html">- Single Video Post</a>
-                        </li>
-                        <li><a href="contact.html">- Contact</a></li>
-                        <li><a href="typography.html">- Typography</a></li>
-                        <li><a href="login.html">- Login</a></li>
-                      </ul>
-                      <ul class="single-mega cn-col-4">
-                        <li><a href="index.html">- Home</a></li>
-                        <li><a href="archive-list.html">- Archive List</a></li>
-                        <li><a href="archive-grid.html">- Archive Grid</a></li>
-                        <li><a href="single-post.html">- Single Post</a></li>
-                        <li>
-                          <a href="video-post.html">- Single Video Post</a>
-                        </li>
-                        <li><a href="contact.html">- Contact</a></li>
-                        <li><a href="typography.html">- Typography</a></li>
-                        <li><a href="login.html">- Login</a></li>
-                      </ul>
-                      <ul class="single-mega cn-col-4">
-                        <li><a href="index.html">- Home</a></li>
-                        <li><a href="archive-list.html">- Archive List</a></li>
-                        <li><a href="archive-grid.html">- Archive Grid</a></li>
-                        <li><a href="single-post.html">- Single Post</a></li>
-                        <li>
-                          <a href="video-post.html">- Single Video Post</a>
-                        </li>
-                        <li><a href="contact.html">- Contact</a></li>
-                        <li><a href="typography.html">- Typography</a></li>
-                        <li><a href="login.html">- Login</a></li>
-                      </ul>
-                      <ul class="single-mega cn-col-4">
-                        <li><a href="index.html">- Home</a></li>
-                        <li><a href="archive-list.html">- Archive List</a></li>
-                        <li><a href="archive-grid.html">- Archive Grid</a></li>
-                        <li><a href="single-post.html">- Single Post</a></li>
-                        <li>
-                          <a href="video-post.html">- Single Video Post</a>
-                        </li>
-                        <li><a href="contact.html">- Contact</a></li>
-                        <li><a href="typography.html">- Typography</a></li>
-                        <li><a href="login.html">- Login</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -173,7 +92,9 @@
 </template>
 
 <script>
+import SocialMedia from './SocialMedia.vue'
 export default {
   name: 'PublicHeader',
+  components: { SocialMedia },
 }
 </script>
