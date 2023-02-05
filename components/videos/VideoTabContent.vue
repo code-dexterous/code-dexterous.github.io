@@ -12,9 +12,9 @@
           backgroundImage: `url(${require('~/assets/imgs/' + player.image)})`,
         }"
       >
-        <a href="video-post.html" class="btn play-btn">
+        <nuxt-link :to="`video-post/${player.id}`" class="btn play-btn">
           <font-awesome-icon :icon="['fas', 'play']" aria-hidden="true" />
-        </a>
+        </nuxt-link>
 
         <div class="post-content">
           <a href="#" class="post-cata">{{ player.badge }}</a>
